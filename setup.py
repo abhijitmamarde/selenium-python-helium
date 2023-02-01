@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
 	name = 'helium',
 	# Also update docs/conf.py when you change this:
-	version = '3.1.0-SNAPSHOT',
+	version = '3.1.0',
 	author = 'Michael Herrmann',
 	author_email = 'michael+removethisifyouarehuman@herrmann.io',
 	description = 'Lighter browser automation based on Selenium.',
@@ -13,7 +13,7 @@ setup(
 	packages = find_packages(exclude=['tests', 'tests.*']),
 	install_requires = [
 		# Also update requirements/base.txt when you make changes here.
-		'selenium==3.141.0'
+		'selenium'
 	],
 	package_data = {
 		'helium._impl': ['webdrivers/**/*']
